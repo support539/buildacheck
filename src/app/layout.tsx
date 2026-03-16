@@ -3,6 +3,7 @@ import { Libre_Baskerville, Outfit } from "next/font/google";
 import "./globals.css";
 import Header from "@/components/Header";
 import Footer from "@/components/Footer";
+import PageTransition from "@/components/PageTransition";
 
 const libreBaskerville = Libre_Baskerville({
   weight: ["400", "700"],
@@ -50,9 +51,12 @@ export default function RootLayout({
     <html lang="en-AU">
       <body
         className={`${libreBaskerville.variable} ${outfit.variable} font-body antialiased`}
+        suppressHydrationWarning
       >
         <Header />
-        <main>{children}</main>
+        <main>
+          <PageTransition>{children}</PageTransition>
+        </main>
         <Footer />
       </body>
     </html>

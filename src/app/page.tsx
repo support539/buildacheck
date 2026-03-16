@@ -1,4 +1,5 @@
 import Link from "next/link";
+import Image from "next/image";
 import RevealOnScroll from "@/components/RevealOnScroll";
 
 const services = [
@@ -77,15 +78,19 @@ export default function Home() {
   return (
     <>
       {/* Hero */}
-      <section className="relative overflow-hidden bg-slate-900 py-24 lg:py-32">
-        <div className="pointer-events-none absolute right-0 top-0 h-full w-1/3 opacity-[0.03]">
-          <div className="h-full w-full" style={{
-            backgroundImage: "repeating-linear-gradient(45deg, transparent, transparent 40px, currentColor 40px, currentColor 41px)",
-            color: "#c47a3d",
-          }} />
-        </div>
+      <section className="relative overflow-hidden bg-slate-900">
+        {/* Background image */}
+        <Image
+          src="/images/hero-building.webp"
+          alt="Builder reviewing architectural plans"
+          fill
+          priority
+          className="object-cover opacity-20"
+          sizes="100vw"
+        />
+        <div className="pointer-events-none absolute inset-0 bg-gradient-to-r from-slate-900 via-slate-900/95 to-slate-900/70" />
 
-        <div className="relative mx-auto max-w-7xl px-5 sm:px-8">
+        <div className="relative mx-auto max-w-7xl px-5 py-24 sm:px-8 lg:py-32">
           <div className="max-w-3xl">
             <div className="mb-8 h-[2px] w-20 bg-copper-500" />
             <h1 className="font-display text-4xl font-bold leading-[1.15] text-white sm:text-5xl lg:text-6xl">
