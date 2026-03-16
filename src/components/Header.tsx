@@ -106,7 +106,7 @@ export default function Header() {
                 >
                   Services
                   <svg
-                    className="mt-0.5 h-3.5 w-3.5 opacity-50"
+                    className="mt-0.5 h-3.5 w-3.5 shrink-0 opacity-50"
                     fill="none"
                     viewBox="0 0 24 24"
                     stroke="currentColor"
