@@ -3,7 +3,6 @@ import { Libre_Baskerville, Outfit } from "next/font/google";
 import "./globals.css";
 import Header from "@/components/Header";
 import Footer from "@/components/Footer";
-import PageTransition from "@/components/PageTransition";
 
 const libreBaskerville = Libre_Baskerville({
   weight: ["400", "700"],
@@ -56,7 +55,7 @@ export default function RootLayout({
       >
         <Header />
         <main>
-          <PageTransition>{children}</PageTransition>
+          {children}
         </main>
         <Footer />
       </body>
