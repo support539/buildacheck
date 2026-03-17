@@ -25,14 +25,17 @@ export default function Footer() {
         <div className="grid grid-cols-1 gap-12 md:grid-cols-2 lg:grid-cols-4 lg:gap-8">
           {/* Brand */}
           <div>
-            <Link href="/" className="mb-5 flex items-center">
+            <Link href="/" className="mb-5 flex items-center gap-2">
               <Image
-                src="/images/logo.png"
-                alt="BuildaCheck"
-                width={140}
-                height={42}
-                className="h-9 w-auto brightness-0 invert"
+                src="/images/logo-icon.svg"
+                alt=""
+                width={32}
+                height={32}
+                className="h-8 w-8 brightness-0 invert"
               />
+              <span className="font-display text-lg tracking-tight text-white">
+                Builda<span className="text-copper-400">Check</span>
+              </span>
             </Link>
             <p className="mt-4 max-w-xs text-sm leading-relaxed text-slate-400">
               Builder-grade property inspections backed by construction expertise, standards-aligned

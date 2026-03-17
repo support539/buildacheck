@@ -10,6 +10,8 @@ export default function ExpertWitnessPage() {
     <ServicePageLayout
       title="Expert Witness Report"
       subtitle="Tribunal-Ready Reporting. Builder-Grade Expertise. Independent, Defensible Evidence."
+      heroImage="/images/hero-expert-witness.webp"
+      heroImageAlt="Building expert reviewing inspection reports"
       intro="An Expert Witness Report is a formal, standards-aligned document prepared for building disputes, insurance claims, and tribunal proceedings. BuildaCheck provides expert reporting grounded in construction expertise, defect causation analysis, and strict compliance with expert evidence requirements."
       sections={{
         whatItCovers: {

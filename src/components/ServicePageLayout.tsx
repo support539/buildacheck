@@ -1,3 +1,4 @@
+import Image from "next/image";
 import Link from "next/link";
 import RevealOnScroll from "./RevealOnScroll";
 
@@ -10,6 +11,8 @@ interface ServicePageLayoutProps {
   title: string;
   subtitle: string;
   intro: string;
+  heroImage?: string;
+  heroImageAlt?: string;
   sections: {
     whatItCovers: ServiceSection;
     whyItMatters: { intro: string; items: string[] };
@@ -25,14 +28,29 @@ export default function ServicePageLayout({
   title,
   subtitle,
   intro,
+  heroImage,
+  heroImageAlt,
   sections,
   ctaLabel = "Book Now",
 }: ServicePageLayoutProps) {
   return (
     <>
       {/* Hero */}
-      <section className="service-hero-pattern bg-slate-900 py-20 lg:py-28">
-        <div className="mx-auto max-w-7xl px-5 sm:px-8">
+      <section className="relative overflow-hidden bg-slate-900 py-20 lg:py-28">
+        {heroImage && (
+          <>
+            <Image
+              src={heroImage}
+              alt={heroImageAlt || title}
+              fill
+              priority
+              className="object-cover opacity-80"
+              sizes="100vw"
+            />
+            <div className="pointer-events-none absolute inset-0 bg-gradient-to-r from-slate-900 via-slate-900/95 to-slate-900/70" />
+          </>
+        )}
+        <div className="relative mx-auto max-w-7xl px-5 sm:px-8">
           <div className="max-w-3xl">
             <div className="mb-6 h-[2px] w-16 bg-copper-500" />
             <h1 className="font-display text-3xl font-bold leading-tight text-white sm:text-4xl lg:text-5xl">

@@ -85,7 +85,7 @@ export default function Home() {
           alt="Builder reviewing architectural plans"
           fill
           priority
-          className="object-cover opacity-20"
+          className="object-cover opacity-80"
           sizes="100vw"
         />
         <div className="pointer-events-none absolute inset-0 bg-gradient-to-r from-slate-900 via-slate-900/95 to-slate-900/70" />

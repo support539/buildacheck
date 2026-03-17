@@ -10,6 +10,8 @@ export default function WarrantyPage() {
     <ServicePageLayout
       title="Warranty Inspection"
       subtitle="Identify Defects Early. Protect Your Warranty Rights."
+      heroImage="/images/hero-warranty.webp"
+      heroImageAlt="Inspector documenting defects in a home"
       intro="A Warranty Inspection ensures that any defects, incomplete works, or non-compliant items in your home are identified before your statutory warranty period expires. BuildaCheck conducts these inspections with builder-grade expertise, giving you a clear, evidence-driven report you can confidently present to your builder, insurer, or warranty provider."
       sections={{
         whatItCovers: {

@@ -1,4 +1,5 @@
 import type { Metadata } from "next";
+import Image from "next/image";
 import Link from "next/link";
 import FaqAccordion from "@/components/FaqAccordion";
 import RevealOnScroll from "@/components/RevealOnScroll";
@@ -187,16 +188,15 @@ export default function FaqPage() {
     <>
       {/* Hero */}
       <section className="relative overflow-hidden bg-slate-900 py-24 lg:py-32">
-        <div className="pointer-events-none absolute right-0 top-0 h-full w-1/3 opacity-[0.03]">
-          <div
-            className="h-full w-full"
-            style={{
-              backgroundImage:
-                "repeating-linear-gradient(45deg, transparent, transparent 40px, currentColor 40px, currentColor 41px)",
-              color: "#c47a3d",
-            }}
-          />
-        </div>
+        <Image
+          src="/images/hero-faq.webp"
+          alt="Building inspection documents and reports"
+          fill
+          priority
+          className="object-cover opacity-80"
+          sizes="100vw"
+        />
+        <div className="pointer-events-none absolute inset-0 bg-gradient-to-r from-slate-900 via-slate-900/95 to-slate-900/70" />
 
         <div className="relative mx-auto max-w-7xl px-5 sm:px-8">
           <div className="max-w-3xl">

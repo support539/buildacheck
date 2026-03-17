@@ -71,15 +71,18 @@ export default function Header() {
         <div className="mx-auto max-w-7xl px-5 sm:px-8">
           <div className="flex h-[72px] items-center justify-between">
             {/* Logo */}
-            <Link href="/" className="flex items-center group">
+            <Link href="/" className="flex items-center gap-2 group">
               <Image
-                src="/images/logo.png"
-                alt="BuildaCheck"
-                width={160}
-                height={48}
-                className="h-10 w-auto"
+                src="/images/logo-icon.svg"
+                alt=""
+                width={36}
+                height={36}
+                className="h-9 w-9"
                 priority
               />
+              <span className="font-display text-xl tracking-tight text-slate-900">
+                Builda<span className="text-copper-600">Check</span>
+              </span>
             </Link>
 
             {/* Desktop Nav */}

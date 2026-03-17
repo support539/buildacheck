@@ -10,6 +10,8 @@ export default function PracticalCompletionPage() {
     <ServicePageLayout
       title="Practical Completion Inspection (PCI)"
       subtitle="Builder-Grade Handover Inspections for a Defect-Free New Home"
+      heroImage="/images/hero-practical-completion.webp"
+      heroImageAlt="Inspector checking finishes in newly constructed home"
       intro="A Practical Completion Inspection is the final and most important quality check before you take possession of your newly built home. BuildaCheck conducts PCI inspections with builder-level expertise, ensuring every defect, omission, and non-compliant item is identified before you make your final payment."
       sections={{
         whatItCovers: {

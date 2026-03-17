@@ -10,6 +10,8 @@ export default function DilapidationPage() {
     <ServicePageLayout
       title="Dilapidation Report"
       subtitle="Protect Your Project. Prevent Disputes. Document Everything."
+      heroImage="/images/hero-dilapidation.webp"
+      heroImageAlt="Building surveyor measuring cracks in concrete wall"
       intro="A Dilapidation Report is a pre-construction condition assessment of neighbouring properties, council assets, or surrounding structures before building, excavation, demolition, or major renovation works begin. BuildaCheck provides builder-grade, evidence-driven documentation that protects you from false claims, disputes, and liability during and after construction."
       sections={{
         whatItCovers: {

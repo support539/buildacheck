@@ -10,6 +10,8 @@ export default function BuildingPestPage() {
     <ServicePageLayout
       title="Pre-Purchase Building + Pest Inspection"
       subtitle="One Comprehensive Inspection. Complete Peace of Mind."
+      heroImage="/images/hero-building-pest.webp"
+      heroImageAlt="Pest inspector using thermal camera to scan walls"
       intro="A BuildaCheck Pre-Purchase Building + Pest Inspection combines two critical assessments into one seamless service. You receive a builder-grade structural inspection and a timber pest inspection in a single, integrated report — giving you a complete understanding of the property's condition before you commit."
       sections={{
         whatItCovers: {

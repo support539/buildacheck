@@ -10,6 +10,8 @@ export default function PrePurchaseBuildingPage() {
     <ServicePageLayout
       title="Pre-Purchase Building Inspection"
       subtitle="Builder-Grade Accuracy for Confident Property Decisions"
+      heroImage="/images/hero-pre-purchase.webp"
+      heroImageAlt="Building inspector examining exterior of Australian house"
       intro="A BuildaCheck Pre-Purchase Building Inspection gives you the clarity and certainty you need before committing to a property. Every inspection is carried out by construction professionals who understand how homes are built, how defects form, and what they mean for your safety, budget, and long-term maintenance."
       sections={{
         whatItCovers: {
