@@ -39,6 +39,7 @@ export const metadata: Metadata = {
     type: "website",
     locale: "en_AU",
     siteName: "BuildaCheck",
+    images: [{ url: "/images/og-image.png", width: 1200, height: 630 }],
   },
 };
 

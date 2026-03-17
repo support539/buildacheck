@@ -1,4 +1,5 @@
 import Link from "next/link";
+import Image from "next/image";
 
 const services = [
   { href: "/services/pre-purchase-building", label: "Pre-Purchase Building Inspection" },
@@ -24,13 +25,14 @@ export default function Footer() {
         <div className="grid grid-cols-1 gap-12 md:grid-cols-2 lg:grid-cols-4 lg:gap-8">
           {/* Brand */}
           <div>
-            <Link href="/" className="mb-5 flex items-center gap-2.5">
-              <div className="flex h-7 w-7 items-center justify-center bg-copper-500">
-                <div className="h-3.5 w-3.5 border-2 border-white" />
-              </div>
-              <span className="font-display text-lg tracking-tight text-white">
-                Builda<span className="text-copper-400">Check</span>
-              </span>
+            <Link href="/" className="mb-5 flex items-center">
+              <Image
+                src="/images/logo.png"
+                alt="BuildaCheck"
+                width={140}
+                height={42}
+                className="h-9 w-auto brightness-0 invert"
+              />
             </Link>
             <p className="mt-4 max-w-xs text-sm leading-relaxed text-slate-400">
               Builder-grade property inspections backed by construction expertise, standards-aligned

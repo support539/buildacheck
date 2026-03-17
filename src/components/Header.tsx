@@ -1,6 +1,7 @@
 "use client";
 
 import Link from "next/link";
+import Image from "next/image";
 import { usePathname } from "next/navigation";
 import { useState, useEffect, useCallback } from "react";
 
@@ -70,13 +71,15 @@ export default function Header() {
         <div className="mx-auto max-w-7xl px-5 sm:px-8">
           <div className="flex h-[72px] items-center justify-between">
             {/* Logo */}
-            <Link href="/" className="flex items-center gap-2.5 group">
-              <div className="flex h-8 w-8 items-center justify-center bg-slate-900">
-                <div className="h-4 w-4 border-2 border-copper-500" />
-              </div>
-              <span className="font-display text-xl tracking-tight text-slate-900">
-                Builda<span className="text-copper-600">Check</span>
-              </span>
+            <Link href="/" className="flex items-center group">
+              <Image
+                src="/images/logo.png"
+                alt="BuildaCheck"
+                width={160}
+                height={48}
+                className="h-10 w-auto"
+                priority
+              />
             </Link>
 
             {/* Desktop Nav */}
