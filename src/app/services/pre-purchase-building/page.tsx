@@ -3,6 +3,8 @@ import ServicePageLayout from "@/components/ServicePageLayout";
 
 export const metadata: Metadata = {
   title: "Pre-Purchase Building Inspection",
+  description:
+    "Get a thorough pre-purchase building inspection in Melbourne before you buy. Builder-grade accuracy, detailed reports, and fast turnaround from BuildaCheck.",
 };
 
 export default function PrePurchaseBuildingPage() {

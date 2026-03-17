@@ -6,6 +6,8 @@ import RevealOnScroll from "@/components/RevealOnScroll";
 
 export const metadata: Metadata = {
   title: "Book Your Inspection",
+  description:
+    "Book your building inspection in Melbourne online. Choose your inspection type, get an instant quote, and secure your preferred date with BuildaCheck.",
 };
 
 const steps = [

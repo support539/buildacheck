@@ -3,6 +3,8 @@ import ServicePageLayout from "@/components/ServicePageLayout";
 
 export const metadata: Metadata = {
   title: "Expert Witness Report",
+  description:
+    "Tribunal-ready expert witness reports for building disputes in Melbourne. Independent, evidence-based assessments from BuildaCheck's construction experts.",
 };
 
 export default function ExpertWitnessPage() {

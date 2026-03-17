@@ -33,8 +33,34 @@ export default function ServicePageLayout({
   sections,
   ctaLabel = "Book Now",
 }: ServicePageLayoutProps) {
+  const serviceJsonLd = {
+    "@context": "https://schema.org",
+    "@type": "Service",
+    name: title,
+    description: intro,
+    provider: {
+      "@type": "LocalBusiness",
+      name: "BuildaCheck",
+      url: "https://buildacheck.com.au",
+    },
+    areaServed: [
+      {
+        "@type": "City",
+        name: "Melbourne",
+      },
+      {
+        "@type": "State",
+        name: "Greater Victoria",
+      },
+    ],
+  };
+
   return (
     <>
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(serviceJsonLd) }}
+      />
       {/* Hero */}
       <section className="relative overflow-hidden bg-slate-900 py-20 lg:py-28">
         {heroImage && (

@@ -5,6 +5,8 @@ import RevealOnScroll from "@/components/RevealOnScroll";
 
 export const metadata: Metadata = {
   title: "About Us",
+  description:
+    "Meet the licensed building inspectors behind BuildaCheck. Trusted, independent property inspections across Melbourne & Greater Victoria.",
 };
 
 const values = [

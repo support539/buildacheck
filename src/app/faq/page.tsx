@@ -6,6 +6,8 @@ import RevealOnScroll from "@/components/RevealOnScroll";
 
 export const metadata: Metadata = {
   title: "Frequently Asked Questions",
+  description:
+    "Got questions about building inspections in Melbourne? Find answers on costs, timeframes, report details, and what to expect from BuildaCheck.",
 };
 
 const faqSections = [
@@ -184,8 +186,27 @@ const faqSections = [
 ];
 
 export default function FaqPage() {
+  const faqJsonLd = {
+    "@context": "https://schema.org",
+    "@type": "FAQPage",
+    mainEntity: faqSections.flatMap((section) =>
+      section.items.map((item) => ({
+        "@type": "Question",
+        name: item.question,
+        acceptedAnswer: {
+          "@type": "Answer",
+          text: item.answer,
+        },
+      }))
+    ),
+  };
+
   return (
     <>
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(faqJsonLd) }}
+      />
       {/* Hero */}
       <section className="relative overflow-hidden bg-slate-900 py-24 lg:py-32">
         <Image

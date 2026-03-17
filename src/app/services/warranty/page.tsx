@@ -3,6 +3,8 @@ import ServicePageLayout from "@/components/ServicePageLayout";
 
 export const metadata: Metadata = {
   title: "Warranty Inspection",
+  description:
+    "Don't let defects go unclaimed. BuildaCheck warranty inspections in Melbourne document issues before your builder's warranty expires. Book now.",
 };
 
 export default function WarrantyPage() {

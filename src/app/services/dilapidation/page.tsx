@@ -3,6 +3,8 @@ import ServicePageLayout from "@/components/ServicePageLayout";
 
 export const metadata: Metadata = {
   title: "Dilapidation Report",
+  description:
+    "Pre-construction dilapidation reports in Melbourne. Protect yourself from neighbour disputes with BuildaCheck's detailed condition documentation.",
 };
 
 export default function DilapidationPage() {

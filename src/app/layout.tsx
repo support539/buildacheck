@@ -40,6 +40,13 @@ export const metadata: Metadata = {
     siteName: "BuildaCheck",
     images: [{ url: "/images/og-image.png", width: 1200, height: 630 }],
   },
+  twitter: {
+    card: "summary_large_image",
+    title: "BuildaCheck — Builder-Grade Property Inspections",
+    description:
+      "Builder-grade property inspections backed by construction expertise, standards-aligned reporting, and evidence-driven defect analysis. Melbourne & Greater Victoria.",
+    images: ["/images/og-image.png"],
+  },
 };
 
 export default function RootLayout({
@@ -53,6 +60,62 @@ export default function RootLayout({
         className={`${libreBaskerville.variable} ${outfit.variable} font-body antialiased`}
         suppressHydrationWarning
       >
+        <script
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{
+            __html: JSON.stringify({
+              "@context": "https://schema.org",
+              "@type": ["LocalBusiness", "ProfessionalService"],
+              name: "BuildaCheck",
+              url: "https://buildacheck.com.au",
+              description:
+                "Builder-grade property inspections backed by construction expertise, standards-aligned reporting, and evidence-driven defect analysis. Melbourne & Greater Victoria.",
+              logo: "https://buildacheck.com.au/images/logo.png",
+              image: "https://buildacheck.com.au/images/logo.png",
+              email: "support@buildacheck.com.au",
+              telephone: "1300 XXX XXX",
+              areaServed: [
+                {
+                  "@type": "City",
+                  name: "Melbourne",
+                  "@id": "https://en.wikipedia.org/wiki/Melbourne",
+                },
+                {
+                  "@type": "State",
+                  name: "Greater Victoria",
+                },
+              ],
+              serviceType: [
+                "Pre-Purchase Building Inspection",
+                "Practical Completion Inspection (PCI)",
+                "Warranty Inspection",
+                "Dilapidation Report",
+                "Expert Witness Report",
+                "Building & Pest Inspection",
+              ],
+              openingHoursSpecification: [
+                {
+                  "@type": "OpeningHoursSpecification",
+                  dayOfWeek: [
+                    "Monday",
+                    "Tuesday",
+                    "Wednesday",
+                    "Thursday",
+                    "Friday",
+                  ],
+                  opens: "08:00",
+                  closes: "18:00",
+                },
+                {
+                  "@type": "OpeningHoursSpecification",
+                  dayOfWeek: "Saturday",
+                  opens: "09:00",
+                  closes: "14:00",
+                },
+              ],
+            }),
+          }}
+        />
         <Header />
         <main>
           {children}

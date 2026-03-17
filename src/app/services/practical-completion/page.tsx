@@ -3,6 +3,8 @@ import ServicePageLayout from "@/components/ServicePageLayout";
 
 export const metadata: Metadata = {
   title: "Practical Completion Inspection (PCI)",
+  description:
+    "Protect your new build with a practical completion inspection in Melbourne. BuildaCheck identifies defects before handover so you settle with confidence.",
 };
 
 export default function PracticalCompletionPage() {

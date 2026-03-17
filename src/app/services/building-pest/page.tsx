@@ -3,6 +3,8 @@ import ServicePageLayout from "@/components/ServicePageLayout";
 
 export const metadata: Metadata = {
   title: "Pre-Purchase Building + Pest Inspection",
+  description:
+    "Combined building and pest inspection in Melbourne. One visit, one integrated report covering structural defects and timber pests. Book with BuildaCheck today.",
 };
 
 export default function BuildingPestPage() {
