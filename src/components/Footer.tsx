@@ -91,13 +91,13 @@ export default function Footer() {
                 <svg className="mt-0.5 h-4 w-4 shrink-0 text-copper-500" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={2}>
                   <path d="M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21l-2.257 1.13a11.042 11.042 0 005.516 5.516l1.13-2.257a1 1 0 011.21-.502l4.493 1.498a1 1 0 01.684.949V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z" />
                 </svg>
-                1300 XXX XXX
+                <a href="tel:0499919992" className="transition-colors hover:text-white">0499 919 992</a>
               </li>
               <li className="flex items-start gap-2">
                 <svg className="mt-0.5 h-4 w-4 shrink-0 text-copper-500" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={2}>
                   <path d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z" />
                 </svg>
-                support@buildacheck.com.au
+                <a href="mailto:info@buildacheck.com.au" className="transition-colors hover:text-white">info@buildacheck.com.au</a>
               </li>
               <li className="flex items-start gap-2">
                 <svg className="mt-0.5 h-4 w-4 shrink-0 text-copper-500" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={2}>
@@ -130,6 +130,26 @@ export default function Footer() {
             <a href="#" className="transition-colors hover:text-slate-300">Privacy Policy</a>
             <a href="#" className="transition-colors hover:text-slate-300">Inspection Agreement</a>
           </div>
+        </div>
+      </div>
+
+      {/* Trust Logos */}
+      <div className="border-t border-slate-800 bg-slate-950 py-6">
+        <div className="mx-auto flex max-w-7xl flex-wrap items-center justify-center gap-8 px-5 sm:px-8">
+          <Image
+            src="/images/vba-logo.svg"
+            alt="Victorian Building Authority"
+            width={160}
+            height={48}
+            className="h-12 w-auto opacity-80 transition-opacity hover:opacity-100"
+          />
+          <Image
+            src="/images/rbp-logo.svg"
+            alt="Registered Building Practitioner"
+            width={160}
+            height={48}
+            className="h-12 w-auto opacity-80 transition-opacity hover:opacity-100"
+          />
         </div>
       </div>
 

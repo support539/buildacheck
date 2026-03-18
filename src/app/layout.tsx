@@ -72,8 +72,8 @@ export default function RootLayout({
                 "Builder-grade property inspections backed by construction expertise, standards-aligned reporting, and evidence-driven defect analysis. Melbourne & Greater Victoria.",
               logo: "https://buildacheck.com.au/images/logo.png",
               image: "https://buildacheck.com.au/images/logo.png",
-              email: "support@buildacheck.com.au",
-              telephone: "1300 XXX XXX",
+              email: "info@buildacheck.com.au",
+              telephone: "0499 919 992",
               areaServed: [
                 {
                   "@type": "City",

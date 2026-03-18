@@ -252,7 +252,7 @@ export default function ContactPage() {
                         Phone
                       </p>
                       <p className="mt-0.5 text-sm text-slate-600">
-                        1300 XXX XXX
+                        <a href="tel:0499919992" className="text-copper-600 transition-colors hover:text-copper-700">0499 919 992</a>
                       </p>
                     </div>
                   </div>
@@ -273,10 +273,10 @@ export default function ContactPage() {
                         Email
                       </p>
                       <a
-                        href="mailto:support@buildacheck.com.au"
+                        href="mailto:info@buildacheck.com.au"
                         className="mt-0.5 text-sm text-copper-600 transition-colors hover:text-copper-700"
                       >
-                        support@buildacheck.com.au
+                        info@buildacheck.com.au
                       </a>
                     </div>
                   </div>
@@ -317,10 +317,10 @@ export default function ContactPage() {
                     directly.
                   </p>
                   <a
-                    href="mailto:projects@buildacheck.com.au"
+                    href="mailto:info@buildacheck.com.au"
                     className="mt-3 inline-block text-sm font-medium text-copper-600 transition-colors hover:text-copper-700"
                   >
-                    projects@buildacheck.com.au
+                    info@buildacheck.com.au
                   </a>
                 </div>
               </div>
