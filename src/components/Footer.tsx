@@ -137,14 +137,14 @@ export default function Footer() {
       <div className="border-t border-slate-800 bg-slate-950 py-6">
         <div className="mx-auto flex max-w-7xl flex-wrap items-center justify-center gap-8 px-5 sm:px-8">
           <Image
-            src="/images/vba-logo.svg"
+            src="/images/vba-logo.webp"
             alt="Victorian Building Authority"
             width={160}
             height={48}
             className="h-12 w-auto opacity-80 transition-opacity hover:opacity-100"
           />
           <Image
-            src="/images/rbp-logo.svg"
+            src="/images/rbp-logo.webp"
             alt="Registered Building Practitioner"
             width={160}
             height={48}
