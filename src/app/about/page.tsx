@@ -58,6 +58,12 @@ const supportedBy = [
   "24\u201348 hour turnaround",
 ];
 
+const ecosystem = [
+  "BuildaCheck leads the inspection, compliance, and reporting workflow.",
+  "BuildaScan extends that workflow with Digital Site Intelligence, mapping, thermal capture, and 3D outputs.",
+  "Citadel Building Group sits behind the ecosystem as the parent brand.",
+];
+
 export default function AboutPage() {
   return (
     <>
@@ -204,6 +210,38 @@ export default function AboutPage() {
                   </li>
                 ))}
               </ul>
+            </div>
+          </RevealOnScroll>
+        </div>
+      </section>
+
+      {/* Ecosystem */}
+      <section className="py-20 lg:py-28">
+        <div className="mx-auto max-w-7xl px-5 sm:px-8">
+          <RevealOnScroll>
+            <div className="grid gap-12 lg:grid-cols-[0.9fr_1.1fr] lg:gap-20">
+              <div>
+                <p className="mb-2 font-body text-xs font-semibold uppercase tracking-[0.2em] text-copper-500">
+                  Our Ecosystem
+                </p>
+                <h2 className="font-display text-3xl font-bold leading-tight text-slate-900 sm:text-4xl">
+                  One group, two specialist modules, one reporting chain.
+                </h2>
+                <p className="mt-4 leading-relaxed text-slate-600">
+                  BuildaCheck remains the inspection-led front door. BuildaScan gives the business a
+                  Digital Site Intelligence layer for jobs that need safer capture, deeper mapping, and
+                  stronger spatial evidence.
+                </p>
+              </div>
+              <div className="space-y-4">
+                {ecosystem.map((item) => (
+                  <div key={item} className="border-l-2 border-copper-200 py-2 pl-5">
+                    <p className="text-[0.938rem] leading-relaxed text-slate-700">
+                      {item}
+                    </p>
+                  </div>
+                ))}
+              </div>
             </div>
           </RevealOnScroll>
         </div>

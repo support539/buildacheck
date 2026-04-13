@@ -1,8 +1,8 @@
 import type { Metadata } from "next";
 import { Libre_Baskerville, Outfit } from "next/font/google";
 import "./globals.css";
-import Header from "@/components/Header";
 import Footer from "@/components/Footer";
+import Header from "@/components/Header";
 
 const libreBaskerville = Libre_Baskerville({
   weight: ["400", "700"],
@@ -18,16 +18,21 @@ const outfit = Outfit({
 });
 
 export const metadata: Metadata = {
+  metadataBase: new URL("https://buildacheck.com.au"),
   title: {
-    default: "BuildaCheck — Builder-Grade Property Inspections",
+    default: "BuildaCheck | Inspections + Digital Site Intelligence",
     template: "%s | BuildaCheck",
   },
   description:
-    "Builder-grade property inspections backed by construction expertise, standards-aligned reporting, and evidence-driven defect analysis. Melbourne & Greater Victoria.",
+    "BuildaCheck combines builder-grade inspections with BuildaScan Digital Site Intelligence for mapping, thermal capture, 3D outputs, and evidence-led reporting across Melbourne and Greater Victoria.",
   keywords: [
     "building inspection",
     "pre-purchase inspection",
     "property inspection Melbourne",
+    "digital site intelligence",
+    "BuildaScan",
+    "drone roof inspection",
+    "site mapping",
     "PCI inspection",
     "warranty inspection",
     "dilapidation report",
@@ -42,9 +47,9 @@ export const metadata: Metadata = {
   },
   twitter: {
     card: "summary_large_image",
-    title: "BuildaCheck — Builder-Grade Property Inspections",
+    title: "BuildaCheck | Inspections + Digital Site Intelligence",
     description:
-      "Builder-grade property inspections backed by construction expertise, standards-aligned reporting, and evidence-driven defect analysis. Melbourne & Greater Victoria.",
+      "BuildaCheck combines builder-grade inspections with BuildaScan Digital Site Intelligence for mapping, thermal capture, 3D outputs, and evidence-led reporting.",
     images: ["/images/og-image.png"],
   },
 };
@@ -69,7 +74,7 @@ export default function RootLayout({
               name: "BuildaCheck",
               url: "https://buildacheck.com.au",
               description:
-                "Builder-grade property inspections backed by construction expertise, standards-aligned reporting, and evidence-driven defect analysis. Melbourne & Greater Victoria.",
+                "BuildaCheck combines builder-grade inspections with BuildaScan Digital Site Intelligence for mapping, thermal capture, 3D outputs, and evidence-led reporting. Melbourne & Greater Victoria.",
               logo: "https://buildacheck.com.au/images/logo.png",
               image: "https://buildacheck.com.au/images/logo.png",
               email: "info@buildacheck.com.au",
@@ -87,6 +92,9 @@ export default function RootLayout({
               ],
               serviceType: [
                 "Pre-Purchase Building Inspection",
+                "Digital Site Intelligence",
+                "Site Mapping",
+                "Thermal Site Capture",
                 "Practical Completion Inspection (PCI)",
                 "Warranty Inspection",
                 "Dilapidation Report",
@@ -117,9 +125,7 @@ export default function RootLayout({
           }}
         />
         <Header />
-        <main>
-          {children}
-        </main>
+        <main>{children}</main>
         <Footer />
       </body>
     </html>
