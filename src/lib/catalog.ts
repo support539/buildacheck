@@ -59,6 +59,22 @@ export const buildaCheckStandardOffers: Offer[] = [
     ],
   },
   {
+    id: "pre-purchase-building-pest-dilapidation",
+    category: "buildacheck",
+    name: "Pre-Purchase Building + Pest and Dilapidation Report",
+    summary:
+      "Combined buyer due diligence, timber pest assessment, and pre-works condition evidence in one fixed-price report.",
+    price: 399,
+    priceLabel: "$399",
+    bestFor: "Buyers, owners, builders, and neighbouring property risk",
+    includes: [
+      "Builder-led pre-purchase building inspection",
+      "Timber pest assessment",
+      "Dilapidation condition evidence",
+      "Integrated fixed-price report",
+    ],
+  },
+  {
     id: "new-construction-stage-inspection",
     category: "buildacheck",
     name: "New Construction Stage Inspection",

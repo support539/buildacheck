@@ -14,6 +14,10 @@ describe("pricing catalog", () => {
         price: 399,
       }),
       expect.objectContaining({
+        id: "pre-purchase-building-pest-dilapidation",
+        price: 399,
+      }),
+      expect.objectContaining({
         id: "new-construction-stage-inspection",
         price: 449,
       }),

@@ -8,7 +8,6 @@ import {
   combinedPackages,
   dsiPackages,
   intelligenceWorkflow,
-  parentBrand,
 } from "@/lib/catalog";
 
 export default function Home() {
@@ -34,7 +33,10 @@ export default function Home() {
             <h1 className="mt-4 font-display text-4xl font-bold leading-[1.1] text-white text-balance sm:text-5xl lg:text-6xl">
               Inspections and Digital Site Intelligence in one defensible workflow.
             </h1>
-            <p className="mt-6 max-w-2xl text-lg leading-relaxed text-slate-300 text-pretty">
+            <p className="mt-6 max-w-2xl text-xl font-semibold leading-relaxed text-white text-pretty">
+              Builder-grade inspections and digital evidence for buyers, owners, builders, and insurers.
+            </p>
+            <p className="mt-4 max-w-2xl text-base leading-relaxed text-slate-300 text-pretty">
               BuildaCheck delivers builder-grade inspections. BuildaScan extends that workflow with
               mapping, thermal capture, 3D modelling, and AI-assisted site intelligence for higher-risk,
               higher-value decisions.
@@ -102,30 +104,6 @@ export default function Home() {
               </div>
             </div>
           </RevealOnScroll>
-        </div>
-      </section>
-
-      <section className="border-b border-cream-200 bg-cream-50 py-5">
-        <div className="mx-auto flex max-w-7xl flex-wrap items-center justify-between gap-4 px-5 sm:px-8">
-          <div className="flex items-center gap-3">
-            <Image
-              src="/images/citadel-logo.png"
-              alt={parentBrand.name}
-              width={132}
-              height={48}
-              className="h-10 w-auto object-contain"
-            />
-            <p className="text-sm text-slate-600 text-pretty">
-              A {parentBrand.name} workflow for inspection, capture, verification, and reporting.
-            </p>
-          </div>
-          <div className="flex flex-wrap gap-x-6 gap-y-2 text-xs font-medium uppercase text-slate-500">
-            {["Regulator-aligned", "Evidence-grade", "Roof-safe capture", "Fixed + quoted pricing"].map(
-              (item) => (
-                <span key={item}>{item}</span>
-              ),
-            )}
-          </div>
         </div>
       </section>
 

@@ -17,7 +17,7 @@ const buildaCheckLinks = [
 
 const navLinks = [
   { href: "/", label: "Home" },
-  { href: "/digital-site-intelligence", label: "Digital Site Intelligence" },
+  { href: "/digital-site-intelligence", label: "BuildaScan" },
   { href: "/pricing", label: "Pricing" },
   { href: "/about", label: "About" },
   { href: "/faq", label: "FAQ" },
